@@ -1252,6 +1252,10 @@ background-size: 1.5rem;
 
 @media screen and (max-width:479px){
 
+    .padding-global{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .track-record-section .track-record-container .track-record-content .track-grid{
         width: 100%;
     }

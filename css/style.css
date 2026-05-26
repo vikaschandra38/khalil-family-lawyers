@@ -1252,10 +1252,6 @@ background-size: 1.5rem;
 
 @media screen and (max-width:479px){
 
-    .padding-global{
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
     .track-record-section .track-record-container .track-record-content .track-grid{
         width: 100%;
     }
@@ -1275,6 +1271,8 @@ background-size: 1.5rem;
    }
    .what-clients-say-section .what-clients-say-container{
     gap: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
    }
    .clients-section .clients-container .clients-content .client-logos-container>div h3{
     font-size: 1.75rem;
@@ -1284,8 +1282,8 @@ background-size: 1.5rem;
        }
 
     .hero-container .hero-main {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
         .hero-container nav .nav-logo-link img {
         width: 15rem;
@@ -1297,4 +1295,32 @@ background-size: 1.5rem;
             padding-left: 1rem;
             padding-right: 1rem;
         }
+            .who-are-we-section .who-are-we-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .feature-section .feature-container {
+        padding-left: 1em;
+        padding-right: 1rem;
+    }
+    .how-we-help-section .how-we-help-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .track-record-section .track-record-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .clients-section .clients-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .cta-section .cta-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .footer-section .footer-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

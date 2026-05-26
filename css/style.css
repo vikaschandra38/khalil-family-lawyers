@@ -1,0 +1,1290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: "Noto Sans", sans-serif; */
+/*   font-family: "Fraunces", serif; */
+
+
+/* Mobile Menu */
+
+.menu-btn{
+display: none;
+}
+.close-btn-container{
+display: none;
+}
+/* Global Styles */
+
+.page-wrapper {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.primary-btn {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.813rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    background: #E8BB5B;
+    color: #041A32;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.primary-btn img {
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: contain;
+}
+
+.splide__track {
+    width: 100%;
+    overflow: visible !important;
+}
+
+.splide__list {
+    display: flex;
+
+}
+
+.splide__slide {
+    flex-shrink: 0;
+}
+
+.splide__arrow svg {
+    display: none;
+}
+
+.splide__arrow {
+    opacity: 1;
+    height: 2.4rem;
+    width: 2.5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1.25rem 1.25rem;
+    background-color: #0765A8;
+    top: -3rem;
+    right: 0rem;
+    transform: none;
+}
+
+.splide__arrow--prev {
+    background-image: url(../images/left-arrow.svg);
+    left: auto;
+    right: 3rem;
+}
+
+.splide__arrow--next {
+    background-image: url(../images/right-arrow.svg);
+}
+
+/* hero section css */
+.hero-section {
+    position: relative;
+}
+
+.background-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.hero-container {
+    padding-top: 1.25rem;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-container nav {
+    padding-left: 2rem;
+    padding-right: 4.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-container nav .nav-logo-link img {
+    width: 20.813rem;
+    object-fit: contain;
+}
+
+.hero-container nav .nav-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-container nav .nav-links-container a {
+    color: #061322;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.hero-container .hero-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 9.063rem;
+    padding-left: 12.5rem;
+}
+
+.hero-container .hero-main .hero-main-content {
+    max-width: 54.75rem;
+}
+
+.hero-container .hero-main .hero-main-content h1 {
+    color: #061322;
+    font-family: "Fraunces", serif;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 80.64px */
+}
+
+
+/* who are we section */
+
+.who-are-we-section .who-are-we-container {
+    padding-top: 6.625rem;
+    padding-bottom: 3.875rem;
+    padding-left: 12.5rem;
+    padding-right: 25rem;
+}
+
+.who-are-we-section .who-are-we-container .who-are-we-content {
+    display: flex;
+    gap: 2.25rem;
+}
+
+.who-are-we-section .who-are-we-container .who-are-we-content>img {
+    width: 24rem;
+    height: 28.188rem;
+    object-fit: cover;
+}
+
+.who-are-we-section .who-are-we-container .who-are-we-content .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.who-are-we-section .who-are-we-container .who-are-we-content .content p {
+    color: #061322;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.who-are-we-section .who-are-we-container .who-are-we-content .content .content-info {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.who-are-we-section .who-are-we-container .who-are-we-content .content .content-info p {
+    color: #061322;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+/* Feature Section */
+
+.feature-section {
+    background-image: url(../images/legal-office-webflow-optimized.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #061322;
+    opacity: 90%;
+    z-index: 11;
+}
+
+
+.feature-section .feature-container {
+    padding-top: 4.688rem;
+    padding-bottom: 7.5rem;
+    padding-left: 12.5rem;
+    padding-right: 30.5rem;
+    background-image: url(../images/legal-office-webflow-optimized.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.feature-section .feature-container .feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+    z-index: 111;
+}
+
+.feature-section .feature-container .feature-content h2 {
+    color: #E8BB5B;
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 53.76px */
+}
+
+.feature-section .feature-container .feature-content p {
+    color: #FFF;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%;
+    /* 26.88px */
+}
+
+
+/* How we help section */
+
+.how-we-help-section .how-we-help-container {
+    padding-top: 4.188rem;
+    padding-bottom: 9.25rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+}
+
+
+.how-we-help-section .how-we-help-container .header {
+    padding-left: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.how-we-help-section .how-we-help-container .header h2 {
+    color: #0765A8;
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 53.76px */
+}
+
+.how-we-help-section .how-we-help-container .header .line {
+    flex: 1;
+    height: 0.125rem;
+    background-color: #061322;
+}
+
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid {
+    margin-top: 4.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card {
+    flex: 1;
+    background-color: #061322;
+    border: 2px solid #061322;
+    border-radius: 0.25rem;
+    padding-top: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2.688rem;
+    padding-bottom: 5.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: flex-start;
+}
+
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card img {
+    height: 4.5rem;
+    width: 4.5rem;
+    object-fit: contain;
+}
+
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card h3 {
+    color: #E8BB5B;
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112%;
+    /* 35.84px */
+}
+
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card p {
+    color: #FFF;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%;
+    /* 22.4px */
+}
+
+/* Our Track Record Styles */
+
+.track-record-section {
+    background-image: url(../images/our-track-record-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.track-record-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #061322;
+    opacity: 90%;
+    z-index: 11;
+}
+
+.track-record-section .track-record-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+}
+
+.track-record-section .track-record-container .track-record-content {
+    display: flex;
+    gap: 8.313rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 111;
+}
+
+.track-record-section .track-record-container .track-record-content h2 {
+    color: #E8BB5B;
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 53.76px */
+}
+
+.track-record-section .track-record-container .track-record-content .track-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+}
+
+.track-record-section .track-record-container .track-record-content .track-grid>div {
+    padding-top: 3.75rem;
+    padding-right: 2.5rem;
+    padding-right: 6.188rem;
+    padding-bottom: 4.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.track-record-section .track-record-container .track-record-content .track-grid>div h3 {
+    color: #FFF;
+    font-family: "Fraunces", serif;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 96px */
+}
+
+.track-record-section .track-record-container .track-record-content .track-grid>div p {
+    color: #FFF;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 112%;
+    /* 33.6px */
+    opacity: 0.6;
+}
+
+
+/* Testimonial Section */
+.what-clients-say-section {
+    overflow: hidden;
+}
+
+.what-clients-say-section .what-clients-say-container {
+    padding-top: 9.25rem;
+    padding-bottom: 7.313rem;
+    padding-left: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.what-clients-say-section .what-clients-say-container h2 {
+    padding-left: 7rem;
+    color: #0765A8;
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 53.76px */
+}
+
+.what-clients-say-section .what-clients-say-container .testimonial-card {
+    display: flex;
+    width: 37.125rem;
+    padding: 2.625rem 2rem 2.5rem 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem;
+    border-radius: 0.25rem;
+    border: 0.125rem solid #0C73BA;
+}
+
+.what-clients-say-section .what-clients-say-container .testimonial-card p {
+    color: #061322;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%;
+    /* 26.88px */
+}
+
+.what-clients-say-section .what-clients-say-container .testimonial-card h3 {
+    color: #0765A8;
+    text-align: right;
+    font-family: "Fraunces", serif;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 112%;
+    /* 31.36px */
+}
+
+/* Clients Section */
+
+.clients-section .clients-container {
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
+    padding-left: 5.5rem;
+    padding-right: 3.25rem;
+}
+
+.clients-section .clients-container .clients-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.clients-section .clients-container .clients-content .header {
+    flex: 1;
+}
+
+.clients-section .clients-container .clients-content .header h2 {
+    color: #061322;
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 53.76px */
+}
+
+.clients-section .clients-container .clients-content .header h2>span {
+    display: block;
+}
+
+.clients-section .clients-container .clients-content .client-logos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.688rem;
+    flex: 1;
+}
+
+.clients-section .clients-container .clients-content .client-logos-container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+}
+
+.clients-section .clients-container .clients-content .client-logos-container>div h3 {
+    color: #0765A8;
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 35.84px */
+}
+
+.clients-section .clients-container .clients-content .client-logos-container>div .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+/* CTA section */
+
+.cta-section .cta-container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 5.5rem;
+    padding-right: 12.5rem;
+}
+
+.cta-section .cta-container .cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5.125rem;
+}
+
+.cta-section .cta-container .cta-content .header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cta-section .cta-container .cta-content .header h2 {
+    color: #0765A8;
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 53.76px */
+}
+
+.cta-section .cta-container .cta-content .header .line {
+    flex: 1;
+    height: 0.125rem;
+    background-color: #061322;
+}
+
+.cta-section .cta-container .cta-content .content-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 5.5rem;
+}
+
+.cta-section .cta-container .cta-content .content-body p {
+    max-width: 49.75rem;
+    width: 100%;
+    color: #061322;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 112%;
+    /* 35.84px */
+}
+
+.cta-section .cta-container .cta-content .content-body .button-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-section .cta-container .cta-content .content-body .button-container .or {
+    color: #061322;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cta-section .cta-container .cta-content .content-body .button-container .link {
+    color: #0765A8;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+
+/* Footer Section */
+
+.footer-section {
+    background-color: #040B14;
+}
+
+.footer-section .footer-container {
+    padding-top: 2.625rem;
+    padding-left: 5rem;
+    padding-bottom: 2.5rem;
+    padding-right: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.813rem;
+}
+
+.footer-section .footer-container .footer-top-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.625rem;
+}
+
+.footer-section .footer-container .footer-top-content .footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8.25rem;
+    max-width: 18.875rem;
+    width: 100%;
+}
+
+.footer-section .footer-container .footer-top-content .footer-logo-container .logo-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-section .footer-container .footer-top-content .footer-logo-container img {
+    width: 8.813rem;
+    object-fit: contain;
+}
+
+.footer-section .footer-container .footer-top-content .footer-logo-container .logo-box h3 {
+    color: #E8BB5B;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 24.64px */
+}
+
+.footer-section .footer-container .footer-top-content .footer-logo-container .logo-box p {
+    color: #FFF;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%;
+    /* 26.88px */
+}
+
+.footer-section .footer-container .footer-bottom-content {
+    color: #FFF;
+    text-align: right;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%;
+    /* 17.92px */
+}
+
+.footer-section .footer-container .footer-top-content .office-container {
+    max-width: 28.375rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-section .footer-container .footer-top-content .office-container h3 {
+    color: #E8BB5B;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 24.64px */
+}
+
+.footer-section .footer-container .footer-top-content .office-container .address-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.footer-section .footer-container .footer-top-content .office-container .address-container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-section .footer-container .footer-top-content .office-container .address-container>div>h4 {
+    color: #FFF;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 112%;
+    /* 26.88px */
+}
+
+.footer-section .footer-container .footer-top-content .office-container .address-container>div>p {
+    color: #FFF;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%;
+    /* 20.16px */
+    opacity: 0.8;
+}
+
+.footer-section .footer-container .footer-top-content .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-section .footer-container .footer-top-content .contact-info .social-links {
+    display: flex;
+    align-items: center;
+    gap: 2.375rem;
+    margin-top: 1rem;
+}
+
+.footer-section .footer-container .footer-top-content .contact-info .social-links a img {
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+}
+
+.footer-section .footer-container .footer-top-content .contact-info h4 {
+    color: #E8BB5B;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+    /* 24.64px */
+}
+
+.footer-section .footer-container .footer-top-content .contact-info .call-us {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    color: #FFF;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 112%;
+    /* 40.32px */
+}
+
+.footer-section .footer-container .footer-top-content .contact-info .call-us img {
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: contain;
+}
+
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width:1440px) and (min-width:1200px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:991px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:767px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:390px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .who-are-we-section .who-are-we-container .who-are-we-content>img {
+        width: 20rem;
+        height: 25rem;
+    }
+  .who-are-we-section .who-are-we-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.feature-section .feature-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.feature-section .feature-container .feature-content h2{
+    font-size: 2.5rem;
+}
+
+.feature-section .feature-container .feature-content p{
+    font-size: 1.25rem;
+    line-height: 140%;
+}
+.how-we-help-section .how-we-help-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.how-we-help-section .how-we-help-container .header{
+    padding-left: 0rem;
+}
+.how-we-help-section .how-we-help-container .header h2{
+    font-size: 2.5rem;
+}
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid{
+    margin-top: 3rem;
+    gap: 1rem;
+}
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card p{
+    font-size: 1.25rem;
+    line-height: 140%;
+}
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card h3{
+    font-size: 1.75rem;
+}
+.track-record-section .track-record-container{
+    padding: 2rem;
+}
+.track-record-section .track-record-container .track-record-content{
+    gap: 4rem;
+}
+.track-record-section .track-record-container .track-record-content .track-grid>div h3 {
+font-size: 5rem;
+}
+.track-record-section .track-record-container .track-record-content .track-grid>div p{
+    font-size: 1.25rem;
+}
+.track-record-section .track-record-container .track-record-content .track-grid>div{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 4rem;
+}
+.what-clients-say-section .what-clients-say-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    gap: 3rem;
+}
+.what-clients-say-section .what-clients-say-container h2{
+    padding-left: 0rem;
+    font-size: 2.5rem;
+}
+.what-clients-say-section .what-clients-say-container .testimonial-card{
+    padding: 2rem;
+}
+.what-clients-say-section .what-clients-say-container .testimonial-card p{
+    font-size: 1.25rem;
+    line-height: 140%;
+}
+.what-clients-say-section .what-clients-say-container .testimonial-card h3{
+    font-size: 1.5rem;
+}
+.clients-section .clients-container{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.clients-section .clients-container .clients-content{
+    flex-direction: column;
+    gap: 3rem;
+}
+.clients-section .clients-container .clients-content .header h2>span{
+    display: inline-block;
+}
+
+.clients-section .clients-container .clients-content .client-logos-container>div .logos-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+.clients-section .clients-container .clients-content .client-logos-container {
+    gap: 5rem;
+}
+.cta-section .cta-container{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.cta-section .cta-container .cta-content .header h2{
+    font-size: 2.5rem;
+}
+.cta-section .cta-container .cta-content{
+    gap: 3rem;
+}
+.cta-section .cta-container .cta-content .content-body p {
+    max-width: 30rem;
+    font-size: 1.5rem;
+    line-height: 140%;
+}
+.cta-section .cta-container .cta-content .content-body .button-container{
+    gap: 1rem;
+}
+.cta-section .cta-container .cta-content .content-body .button-container .link{
+    font-size: 1.25rem;
+}
+.clients-section .clients-container .clients-content .header h2{
+    font-size: 2.5rem;
+}
+.splide__arrow--next{
+    right: 2rem;
+}
+.splide__arrow--prev {
+    right: 5rem;
+}
+.footer-section .footer-container {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+    gap: 1rem;
+}
+.footer-section .footer-container .footer-top-content{
+    flex-wrap: wrap;
+}
+.footer-section .footer-container .footer-top-content .footer-logo-container .logo-box p {
+font-size: 1.25rem;
+line-height: 140%;
+}
+.footer-section .footer-container .footer-top-content .office-container .address-container>div>h4 {
+    font-size: 1.25rem;
+}
+.footer-section .footer-container .footer-top-content .footer-logo-container{
+    gap: 6rem;
+}
+.footer-section .footer-container .footer-top-content .footer-logo-container img {
+width: 7rem;
+}
+.footer-section .footer-container .footer-top-content .contact-info .call-us {
+font-size: 1.25rem;
+}
+.footer-section .footer-container .footer-top-content .contact-info .call-us img {
+height: 1.25rem;
+width: 1.25rem;
+}
+.footer-section .footer-container .footer-top-content .contact-info .social-links{
+    gap: 1.25rem;
+}
+
+.footer-section .footer-container .footer-top-content .contact-info .social-links a img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.hero-container .hero-main {
+    padding-bottom: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.hero-container {
+height: 70vh;
+}
+.hero-container .hero-main .hero-main-content h1 {
+    font-size:3.5rem;
+}
+.hero-container{
+    padding-top: 1rem;
+}
+.video-overlay {
+
+    background: rgb(0 0 0 / 14%);
+  
+}
+.hero-container nav .nav-logo-link img {
+    width: 15rem;
+}
+.hero-container nav .nav-links-container{
+    gap: 1.5rem;
+}
+}
+
+
+
+@media screen and (max-width:767px) {
+.track-record-section .track-record-container .track-record-content{
+    flex-direction: column;
+   align-items: flex-start;
+   gap: 3rem;
+}
+    .track-record-section .track-record-container .track-record-content .track-grid>div h3 {
+        font-size: 4rem;
+    }
+        .track-record-section .track-record-container .track-record-content .track-grid>div {
+      padding-top: 0rem;
+        }
+
+    .clients-section .clients-container .clients-content .client-logos-container>div .logos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+        .hero-container .hero-main .hero-main-content h1 {
+        font-size: 2.5rem;
+    }
+
+        .who-are-we-section .who-are-we-container .who-are-we-content>img {
+        width: 16rem;
+        height: 20rem;
+    }
+
+    .who-are-we-section .who-are-we-container .who-are-we-content .content p {
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.who-are-we-section .who-are-we-container .who-are-we-content .content .content-info {
+    padding-left: 0rem;
+
+}
+.who-are-we-section .who-are-we-container .who-are-we-content{
+    gap: 1.5rem;
+}
+.who-are-we-section .who-are-we-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+}
+    .feature-section .feature-container .feature-content h2 {
+        font-size: 2rem;
+        line-height: 140%;
+    }
+        .feature-section .feature-container .feature-content p {
+        font-size: 1rem;
+        line-height: 140%;
+        }
+        .how-we-help-section .how-we-help-container .header h2 {
+        font-size: 2rem;
+    }
+        .how-we-help-section .how-we-help-container .how-we-help-cards-grid {
+        flex-direction: column;
+    }
+        .how-we-help-section .how-we-help-container .how-we-help-cards-grid .how-we-help-card p {
+        font-size: 1rem;
+        }
+        .track-record-section .track-record-container .track-record-content h2{
+            font-size: 2rem;
+        }
+            .track-record-section .track-record-container .track-record-content .track-grid>div h3 {
+        font-size: 3rem;
+    }
+        .what-clients-say-section .what-clients-say-container h2 {
+        font-size: 2rem;
+    }
+      
+        .clients-section .clients-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        }
+            .clients-section .clients-container .clients-content .header h2 {
+        font-size: 2rem;
+    }
+    .clients-section .clients-container .clients-content .client-logos-container>div .logos-grid img{
+        width: 100%;
+    }
+        .cta-section .cta-container .cta-content .header h2 {
+        font-size: 2rem;
+    }
+        .cta-section .cta-container .cta-content .content-body p {
+        font-size: 1.25rem;
+    }
+    .cta-section .cta-container .cta-content .content-body{
+        flex-direction: column;
+    }
+        .cta-section .cta-container .cta-content {
+        gap: 2rem;
+    }
+    .cta-section .cta-container .cta-content .content-body {
+    gap: 2.5rem;
+}
+    .footer-section .footer-container .footer-top-content .footer-logo-container {
+        gap: 1rem;
+        max-width: none;
+    }
+    .footer-section .footer-container{
+        gap: 2.65rem;
+    }
+    .footer-section .footer-container .footer-bottom-content{
+        text-align: left;
+    }
+    .track-record-section .track-record-container{
+        padding: 4rem 2rem;
+    }
+        .hero-container nav .nav-logo-link img {
+        width: 16rem;
+    }
+    .hero-container nav{
+        padding-right: 2rem;
+    }
+        .hero-container nav .nav-links-container {
+        gap: 1rem;
+    }
+    .hero-container nav .nav-links-container a{
+        font-size: 0.875rem;
+    }
+           .menu-btn{
+display: block;
+height: 2.5rem;
+width: 3rem;
+background-color: #fff;
+border: none;
+background-image: url(../images/menu.svg);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 1.5rem;
+}
+  .hero-container nav .nav-links-container{
+        position: fixed;
+        inset: 0;
+        padding: 2rem;
+        background-color: #fff;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: flex-start;
+        transform: translateX(110%);
+        transition: all .3s ease;
+    }
+     .hero-container nav .nav-links-container.open{
+        transform: translateX(0%);
+     }
+     .close-btn-container{
+display: flex;
+justify-content: flex-end;
+width: 100%;
+}
+.close-btn{
+height: 2rem;
+width: 2rem;
+background-color: #000;
+background-image: url(../images/close-button-white.svg);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 1.5rem;
+}
+}
+
+
+@media screen and (max-width:479px){
+
+    .track-record-section .track-record-container .track-record-content .track-grid{
+        width: 100%;
+    }
+  
+        .hero-container nav .nav-links-container a {
+        font-size: 1.125rem;
+    }
+   .who-are-we-section .who-are-we-container .who-are-we-content{
+    flex-direction: column;
+   }
+   .who-are-we-section .who-are-we-container .who-are-we-content .content{
+    gap: 2rem;
+   }
+   .splide__arrow{
+    height: 2rem;
+    width: 2rem;
+   }
+   .what-clients-say-section .what-clients-say-container{
+    gap: 5rem;
+   }
+   .clients-section .clients-container .clients-content .client-logos-container>div h3{
+    font-size: 1.75rem;
+   }
+       .track-record-section .track-record-container .track-record-content .track-grid>div{
+        padding-right: 1rem;
+       }
+
+    .hero-container .hero-main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+        .hero-container nav .nav-logo-link img {
+        width: 15rem;
+    }
+        .hero-container {
+        padding-top: 0rem;
+    }
+        .hero-container nav {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+}

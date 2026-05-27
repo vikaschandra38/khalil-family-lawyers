@@ -1301,13 +1301,11 @@ background-size: 1.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-        .hero-container nav .nav-logo-link img {
+        .navbar nav .nav-logo-link img {
         width: 15rem;
     }
-        .hero-container {
-        padding-top: 0rem;
-    }
-        .hero-container nav {
+       
+        .navbar nav {
             padding-left: 1rem;
             padding-right: 1rem;
         }

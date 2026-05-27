@@ -111,10 +111,10 @@ display: none;
     position: absolute;
     inset: 0;
     z-index: 1;
+    background-color: #0000007a;
 }
 
 .hero-container {
-    padding-top: 1.25rem;
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -122,34 +122,51 @@ display: none;
     z-index: 2;
 }
 
-.hero-container nav {
+.navbar nav {
     padding-left: 2rem;
     padding-right: 4.875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.navbar{
+    background-color: transparent;
+    position: relative;
+    z-index: 99;
+    transition: background-color 0.3s ease;
+}
+.navbar.sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #061322;
+    z-index: 999999;
+}
 
-.hero-container nav .nav-logo-link img {
+.navbar nav .nav-logo-link img {
     width: 20.813rem;
     object-fit: contain;
 }
 
-.hero-container nav .nav-links-container {
+.navbar nav .nav-links-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
 
-.hero-container nav .nav-links-container a {
-    color: #061322;
+.navbar nav .nav-links-container a {
+    color: #fff;
     font-family: "Noto Sans", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+}
+.navbar nav .nav-links-container a:hover{
+    color: #0765A8;
 }
 
 .hero-container .hero-main {
@@ -166,7 +183,7 @@ display: none;
 }
 
 .hero-container .hero-main .hero-main-content h1 {
-    color: #061322;
+    color: #fff;
     font-family: "Fraunces", serif;
     font-size: 4.5rem;
     font-style: normal;
@@ -989,7 +1006,7 @@ font-size: 5rem;
 }
 
 .clients-section .clients-container .clients-content .client-logos-container>div .logos-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 .clients-section .clients-container .clients-content .client-logos-container {
     gap: 5rem;
@@ -1077,11 +1094,6 @@ height: 70vh;
 }
 .hero-container{
     padding-top: 1rem;
-}
-.video-overlay {
-
-    background: rgb(0 0 0 / 14%);
-  
 }
 .hero-container nav .nav-logo-link img {
     width: 15rem;
@@ -1199,17 +1211,18 @@ height: 70vh;
     .track-record-section .track-record-container{
         padding: 4rem 2rem;
     }
-        .hero-container nav .nav-logo-link img {
+        .navbar nav .nav-logo-link img {
         width: 16rem;
     }
-    .hero-container nav{
+    .navbar nav{
         padding-right: 2rem;
     }
-        .hero-container nav .nav-links-container {
+        .navbar nav .nav-links-container {
         gap: 1rem;
     }
-    .hero-container nav .nav-links-container a{
+    .navbar nav .nav-links-container a{
         font-size: 0.875rem;
+        color: #061322;
     }
            .menu-btn{
 display: block;
@@ -1222,7 +1235,7 @@ background-repeat: no-repeat;
 background-position: center center;
 background-size: 1.5rem;
 }
-  .hero-container nav .nav-links-container{
+  .navbar nav .nav-links-container{
         position: fixed;
         inset: 0;
         padding: 2rem;
@@ -1233,7 +1246,7 @@ background-size: 1.5rem;
         transform: translateX(110%);
         transition: all .3s ease;
     }
-     .hero-container nav .nav-links-container.open{
+     .navbar nav .nav-links-container.open{
         transform: translateX(0%);
      }
      .close-btn-container{
